@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
-import Navbar from './components/Navbar.vue'; // Adjust the path to where your Navbar is saved
+import Navbar from './components/ui/Navbar.vue'; // Adjust the path to where your Navbar is saved
 </script>
 
 <template>
