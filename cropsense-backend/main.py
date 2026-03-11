@@ -1,3 +1,4 @@
+import os
 import joblib
 import pandas as pd
 from fastapi import FastAPI, HTTPException
@@ -16,8 +17,11 @@ app.add_middleware(
 )
 
 # Load the trained model
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "..", "yield_prediction_model.pkl")
+
 try:
-    model = joblib.load("../yield_prediction_model.pkl") 
+    model = joblib.load(MODEL_PATH) 
     print("✅ Model loaded successfully.")
 except Exception as e:
     print(f"❌ Error loading model: {e}")
