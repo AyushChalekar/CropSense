@@ -17,9 +17,23 @@ watch(() => route.path, () => {
       <div class="flex justify-between h-16">
         
         <div class="flex items-center">
-          <router-link to="/" class="flex-shrink-0 flex items-center gap-2">
-            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332-4.5 1.253"></path></svg>
-            <span class="font-bold text-xl tracking-tight text-gray-900">Crop<span class="text-green-600">Sense</span></span>
+          <router-link to="/" class="flex-shrink-0 flex items-center gap-2 group">
+            <svg 
+              class="w-8 h-8 text-green-600 transition-transform duration-300 group-hover:scale-110" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              stroke-width="2"
+            >
+              <path 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                d="M12 20V10M12 10C12 10 14.5 5.5 19 5.5C19 5.5 21 8 19 12C17 16 12 10 12 10ZM12 10C12 10 9.5 5.5 5 5.5C5 5.5 3 8 5 12C7 16 12 10 12 10Z" 
+              />
+            </svg>
+            <span class="font-bold text-xl tracking-tight text-gray-900">
+              Crop<span class="text-green-600">Sense</span>
+            </span>
           </router-link>
         </div>
 
